@@ -1,0 +1,17 @@
+name = "rbxasset-fetch"
+main = "src/index.js"
+compatibility_date = "2024-12-01"
+
+# Dev server
+[dev]
+port = 8787
+
+# KV namespace for cross-isolate caching
+[[kv_namespaces]]
+binding = "ASSET_CACHE"
+id = "99fc61092e4748d58bdf77d67f5d72a3"
+
+# Environment variables
+[vars]
+ASSET_CACHE_TTL_MS = "300000"
+ALLOW_HEADER_COOKIE = "false"
